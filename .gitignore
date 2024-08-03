@@ -1,8 +1,10 @@
-HELP.md
-target/
+email/target/
+user/target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+email/src/main/resources/application.properties
+user/src/main/resources/application.properties
 
 ### STS ###
 .apt_generated
