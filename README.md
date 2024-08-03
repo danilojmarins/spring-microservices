@@ -7,7 +7,7 @@ Both microservices operates with different databases (PostgreSQL), communicating
 ### Application Flow
 The user microservice exposes an endpoint for registering a user, receiving it's name and email address. Once the user data is saved into the database, a producer publishes a message to the RabbitMQ default exchange.
 
-The email microservice implements a producer which listens to messages redirected to the RabbitMQ queue through the default exchange. It then sends the email to the newly registered user and saves the email information into the database.
+The email microservice implements a consumer which listens to messages redirected to the RabbitMQ queue through the default exchange. It then sends the email to the newly registered user and saves the email information into the database.
 
 Technologies:
 
